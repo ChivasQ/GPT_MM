@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+    <div class="container">
+        <div class="sidebar">
+            <form action="/" method="post" class="form-cont">
+                <input type="text" name="prompt" placeholder="Промпт...">
+                <input type="submit" value="Отправить!">
+            </form>
+        </div>
+        <div class="content">
+            {{text}}
+        </div>
+    </div>
+{% endblock %}
