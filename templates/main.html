@@ -5,12 +5,18 @@
     <div class="container">
         <div class="sidebar">
             <form action="/" method="post" class="form-cont">
-                <input type="text" name="prompt" placeholder="Промпт...">
-                <input type="submit" value="Отправить!">
+                <textarea type="text" name="prompt" placeholder="Your theme for mental map..."></textarea>
+                <input type="submit" value="Send!">
             </form>
         </div>
         <div class="content">
-            {{text}}
+            {% for block in blocklist_level1 %}
+                <div class="blocks_level1">{{ block }}</div>
+            {% endfor %}
+
+            {% for block in blocklist_level2 %}
+                <div class="blocks_level2">{{ block }}</div>
+            {% endfor %}
         </div>
     </div>
 {% endblock %}
