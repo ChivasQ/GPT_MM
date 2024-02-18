@@ -10,13 +10,16 @@
             </form>
         </div>
         <div class="content">
-            {% for block in blocklist_level1 %}
-                <div class="blocks_level1">{{ block }}</div>
-            {% endfor %}
-
-            {% for block in blocklist_level2 %}
-                <div class="blocks_level2">{{ block }}</div>
-            {% endfor %}
+            <div class="level1">
+                {% for block in blocklist_level1 %}
+                    <div class="blocks_level1">{{ block }}</div>
+                {% endfor %}
+            </div>
+            <div class="level2">
+                {% for block in blocklist_level2 %}
+                    <div class="blocks_level2">{{ block }}</div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 {% endblock %}

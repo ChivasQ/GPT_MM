@@ -6,9 +6,40 @@ body {
 }
 
 .container {
-    display: flex;
     height: 100vh;
 }
+
+.level1 {
+    display: inline-block;
+    width: 300px;
+    background-color: lightcoral;
+    height: 100vh;
+    vertical-align: middle;
+}
+
+.level2 {
+    display: inline-block;
+    width: 300px;
+    background-color: lightsalmon;
+    height: 100vh;
+    vertical-align: middle;
+}
+
+.blocks_level1 {
+     min-height: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.blocks_level2 {
+    min-height: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+
+
+
 
 .sidebar {
     width: 400px;
@@ -24,7 +55,6 @@ body {
 
 .content {
     width: 100%;
-    padding: 20px;
     margin-right: 400px;
 }
 

@@ -13,4 +13,13 @@ s = s[indexf:indexl]
 json_object = json.loads(s)
 print(type(json_object))
 print(json_object)
-print(json_object.keys())
+
+for i in list(map(str, json_object.keys())):
+    print(i)
+    for j in json_object[i]:
+        print(' ', j)
+
+        for l in json_object[i][j]:
+            if type(l) is str:
+                print(l, "s")
+            else:print('    ', l)
